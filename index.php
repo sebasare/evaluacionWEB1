@@ -1,6 +1,6 @@
 <?php
 
-include("funcionesEvalua1.php");
+include("funciones.php");
 //Nombre: sebastian salinas restrepo
 
 //Ejercicio 1
