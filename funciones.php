@@ -11,10 +11,7 @@ function sumatoriaSalarios($salario1,$salario2,$salario3,$salario4,$salario5){
 
 //Ejercicio 8
 
-// function calcularedad($actual,$fechanacimiento){
-//     $edad=$actual-$fechanacimiento;
-//     return($edad);
-// }
+
 
 function calcularedad($nacimiento,$actual){
     $edad=$actual-$nacimiento;
