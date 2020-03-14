@@ -6,7 +6,7 @@ include("funciones.php");
 //Ejercicio 1
 echo("Evaluacion web 1, elaborado por sebastian salinas restrepo  <br><br>");
 echo("Ejercicio 1 <br><br>");
-$n1=123;z|
+$n1=123;
 $n2=456;
 
 echo("N1 = ".$n1."<br>");
