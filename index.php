@@ -4,7 +4,7 @@ include("funciones.php");
 //Nombre: sebastian salinas restrepo
 
 //Ejercicio 1
-echo("Evaluacion 1, Elaborado por Juan David Gomez Garcia <br><br>");
+echo("Evaluacion web 1, elaborado por sebastian salinas restrepo  <br><br>");
 echo("Ejercicio 1 <br><br>");
 $n1=123;
 $n2=456;
@@ -33,7 +33,14 @@ $division=$n1/$n2;
 echo("la division de los numeros n1 y n2 es : ".$division."<br><br>");
 
 //Ejercicio 2
-
+/*La clasificación del IMC es la siguiente:
+    • IMC <= 18,4 (Insuficiencia de peso)
+    • 18,5<=IMC<=24,9 (Peso normal)
+    • 25<=IMC<=29,9 (Sobrepeso)
+    • 30<=IMC<=34,9 (Obesidad 1)
+    • 35<=IMC<=39,9 (Obesidad 2)
+    • IMC>=40 (Obesidad 3)
+*/
 echo("<br><br>Ejercicio 2 <br><br>");
 echo("Calcular el índice de masa corporal <br>");
 
@@ -60,7 +67,13 @@ if($imc<= 18.4){
 }
 
 //Ejercicio 3
-
+/*
+3.Hacer un programa en PHP para la tienda Spring Step que tiene una promoción de descuento para vender al mayor, esta
+dependerá del número de zapatos que se compren Si son 3 pares se les dará un 10 de descuento sobre el total de la
+compra si el número de zapatos es mayor 3 pares pero menor o igual de 5 pares, se le otorga un 20 de descuento y si son
+más 5 pares de zapatos se otorgará un 40 de descuento Defina la cantidad de variables que necesite, el precio de cada
+par de zapatos 150 000 y establezca el valor total de una compra de 5 pares de zapatos
+*/
 echo("<br><br> Ejercicio 3 <br><br>");
 echo("Promocion Descuentos <br><br>");
 
@@ -89,7 +102,11 @@ if($Cantzapatosvendidos== 3){
 }
 
 //Ejercicio 4
-
+/*
+4.Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que si
+trabaja 40 horas o menos, se le pagará 20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le
+pagarán a 25 por hora Ejecute su código para calcular el salario con 36 horas trabajadas
+*/
 echo("<br><br> Ejercicio 4 <br><br>");
 echo("Sueldo Semanal <br><br>");
 
@@ -110,7 +127,15 @@ if($horaslaboradas<=40){
 
 
 //Ejercicio 5
-
+/*
+5.Bancolombia contrata sus servicios de desarrollador para realizar un programa en PHP que permita almacenar
+información de nombre, teléfono, dirección y salario de 5 usuarios de una sucursal llamada sucursal A Además, su
+programa debe estar en la capacidad de sumar todos los salarios de los usuarios de la sucursal A en una sola variable
+llamada sumatoriaSalarios y así poder comparar dicho valor con las sucursales B cuyo valor de salarios mensual es de
+20 000 000 y la sucursal C cuyo valor de salarios mensuales es de 15 000 000 Permita que su código muestre cual sucursal
+tiene la mejor sumatoria de salarios y además muestre en pantalla la información completa de los 5 usuarios de la sucursal
+A
+*/
 
 echo("<br><br> Ejercicio 5 <br><br>");
 echo("Almacenar Datos sucursal A <br>");
@@ -144,7 +169,12 @@ echo("<br><br>................................<br><br>");
 
 
 //Ejercicio 6
-
+/*
+6. Almacena en un Array los 10 primeros números pares. Imprima en pantalla cada uno de estos, en una línea diferente con el siguiente
+formato:
+El 1° numero par es: 2
+El 2° numero par es: 4
+*/
 echo("<br><br> Ejercicio 6 <br><br>");
 echo("Numeros Pares <br><br>");
 
@@ -156,7 +186,16 @@ foreach ($pares as $clavepares=>$valorpares){
 echo("<br><br>................................<br><br>");
 
 //Ejercicio 7
-
+/*
+7. Después de realizar una consulta en la base de datos DE LA JUGOSA SAS se tienen almacenados 
+los valores de dicha consulta en un arreglo denominado salpicon, el cual presenta la siguiente configuración:
+[dulce1]=>”Banano”
+[dulce2]=>”Manzana”
+[dulce3]=>”Durazno”
+[acido1]=>”Piña”
+[acido2]=>”Naranja”
+[acido3]=>”Lulo”
+*/
 echo("<br><br> Ejercicio 7 <br><br>");
 echo("Salpicon<br>");
 
@@ -168,10 +207,20 @@ $Salpicon=array('dulce1'=>"Banano,",'dulce2'=>"Manzana,",'dulce3'=>"Durazno,",'a
 echo("<br><br>................................<br><br>");
 
 //Ejercicio 8
+/*
+8. La federación nacional de fútbol necesita de sus servicios como desarrollador de software, 
+para codificar una función en PHP que permita calcular la edad de los jugadores, 
+de acuerdo al año de nacimiento de estos. Declare la función calcularEdad() y pruebe su funcionamiento
+con los años de nacimiento 1991,1995,1987.
+*/
 
 echo("<br><br> Ejercicio 8 <br><br>");
 echo("Calcular Edad <br><br>");
 
+// $edad=array('1991'=>calcularedad(2020,1991), '1995'=>calcularedad(2020,1995), '1987'=>calcularedad(2020,1987));
+// foreach ($edad as $claveedades=>$valoredades){
+//     echo("Si usted nacio en ".$claveedades." usted tiene: ".$valoredades."<br>");
+// }
 
 calcularedad(1991,2020);
 calcularedad(1995,2020);
@@ -181,7 +230,16 @@ calcularedad(1987,2020);
 echo("<br><br>................................<br><br>");
 
 //Ejercicio 9
+/*
+9. La federación nacional de fútbol también necesita que usted codifique una nueva función 
+para establecer el biotipo de los jugadores teniendo en cuenta la estatura de estos. 
+La clasificación internacional del Biotipo de futbolista es:
+Estatura <1.70 m (Biotipo Bajo)
+1.70 m <=Estatura < 1.80 m (Biotipo Promedio)
+Estatura >= 1,80 m (Biotipo Superior)
 
+Ejecute 3 veces su función para las estaturas 1.65 m, 1.78 m y 1.95 m
+*/
 
 echo("<br><br> Ejercicio 9 <br><br>");
 echo("Establecer el biotipo de los jugadores <br><br>");
@@ -193,7 +251,27 @@ biotipojugadores(1.95);
 echo("<br><br>................................<br><br>");
 
 //Ejercicio 10
+/*
+10. El seleccionador nacional de la selección de fútbol de Colombia Carlos Queiroz, 
+necesita de sus servicios como desarrollador de software, 
+para almacenar y organizar la información de los mejores jugadores colombianos alrededor del mundo, 
+para ello el le suministra la siguiente información:
 
+JUGADOR             AÑO NACIMIENTO      POSICION        ESTATURA
+Radamel Falcao      1986                Delantero       1,77 m
+James Rodríguez     1991                Mediocampista   1,81 m
+Juan Cuadrado       1988                Delantero       1,78 m
+Yerry Mina          1994                Defensor        1,95 m
+David Ospina        1988                Portero         1,83 m
+Davinsón Sanchez    1996                Defensor        1,87 m
+Duvan Zapata        1991                Delantero       1,86 m
+Wilmar Barrios      1993                Mediocampista   1,78 m
+Mateus Uribe        1991                MedioCampista   1,80 m
+
+Cree un arreglo multidimensional donde guarde la información de cada jugador 
+calculando la edad y el biotipo de estos a partir de los datos 
+suministrados por Queiroz y muestre los resultados en pantalla uno a uno.
+*/
 
 echo("<br><br> Ejercicio 10 <br><br>");
 echo("Almacenar y Organizar la informacion de los mejores jugadores Colombianos <br><br>");
